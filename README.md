@@ -1,3 +1,24 @@
+The Frontend User Panel of MyMyntra is a dynamic, responsive, and user-friendly interface designed for customers to browse and purchase products seamlessly. This Angular-based application provides a rich shopping experience with features such as product browsing, detailed product views, user authentication, shopping cart management, and secure checkout.
+
+Features
+
+
+User Authentication: Secure user registration and login using username and password.
+Product Catalog: Browse through a wide range of products with category filters, sorting options, and search functionality.
+Product Details: View detailed information about products, including images, descriptions, pricing.
+Shopping Cart: Add, remove, and update items in the shopping cart with real-time feedback.
+Wishlist: Save favorite products to a wishlist for future purchases.
+Order Management: Place orders, view order history.
+Responsive Design: Optimized for both desktop and mobile devices for a smooth user experience.
+
+Technologies Used
+
+
+Frontend: Angular, TypeScript, HTML, CSS, Bootstrap
+Backend: Node.js, Express.js (for API development)
+Database: MongoDB (NoSQL database for data storage)
+
+
 # Myntra
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
