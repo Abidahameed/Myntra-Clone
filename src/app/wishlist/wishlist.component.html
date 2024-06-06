@@ -1,0 +1,138 @@
+<nav class="navbar navbar-light bg-white shadow" style="height: 80px;">
+    <a class="navbar-brand" href="#">
+        <img src="assets/Myntra.png" width="30" height="30" alt="">
+    </a>
+    <!-- <ul class="navbar-nav mr-auto d-flex flex-row align-items-center">
+        <li class="nav-item dropdown position-static" style="margin-left: 20px; font-weight: bold;">
+            <a class="nav-link" href="#" id="navbarDropdown1">
+                MEN
+            </a>
+            
+        </li>
+
+        <li class="nav-item dropdown position-static" style="margin-left: 20px; font-weight: bold;">
+            <a class="nav-link" href="#" id="navbarDropdown2">
+                WOMEN
+            </a>
+            
+        </li>
+
+        <li class="nav-item dropdown position-static" style="margin-left: 20px; font-weight: bold;">
+            <a class="nav-link" href="#" id="navbarDropdown3">
+                KIDS
+            </a>
+           
+        </li>
+    </ul> -->
+
+
+    <!-- Icons -->
+    <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
+        <!-- Search Box -->
+        <!-- <li class="nav-item">
+            <form class="form-inline mr-2">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color: #f7f7f7; border: none;">
+                            <i class="fas fa-search" style="color: rgb(163, 159, 159);"></i>
+                        </span>
+                    </div>
+                    <input class="form-control border-0" type="search" placeholder="Search for products, brands and more" aria-label="Search" style="width: 350px; background-color: #f7f7f7; border-left: none; font-size: 14px;">
+                </div>
+            </form>
+        </li> -->
+
+        <!-- Profile Icon -->
+        <!-- <li class="nav-item dropdown ml-3" id="profile-dropdown">
+            <a class="nav-link" href="#" id="profileDropdownToggle">
+                <div class="icon-wrapper">
+                    <i class="fas fa-user fa-lg"></i>
+                </div>
+                <div class="text-wrapper">
+                    <div class="icon-text" style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">
+                        Profile
+                    </div>
+                </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right profile profile-shadow centered-dropdown" aria-labelledby="profileDropdownToggle" style="left: auto; right: 0; width: 330px;">
+                <h6 class="bold-welcome">Welcome</h6>
+                <p class="centered-text">To access account and manage orders</p>
+                <button type="button" class="btn btn-outline-secondary btn-sm l-profile-btn custom-btn centered-button">
+                    <a class="dropdown-item l-drp-itm custom-button" href="#" [routerLink]="['/login']" style="font-weight: bold; color: #f70c6e;">LOGIN / SIGNUP</a>
+
+
+                </button>
+                <p class="line"></p>
+            </div>
+        </li> -->
+        
+
+        <!-- Wishlist Icon -->
+        <li class="nav-item ml-3">
+            <a class="nav-link" href="#">
+                <i class="fas fa-heart fa-lg"></i>
+                <div style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">Wishlist</div>
+            </a>
+        </li>
+
+        <!-- Cart Bag Icon -->
+        <li class="nav-item ml-3">
+            <a class="nav-link" href="cart" >
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                <div style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">Cart</div>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+
+
+
+<div class="container mt-4">
+    <ng-container *ngIf="isUserLoggedIn; else loginPrompt">
+        <div *ngIf="wishlistItems && wishlistItems.length > 0; else emptyWishlist">
+            <div class="index-headingDiv">
+                <span class="index-heading">My Wishlist items</span>
+            </div>
+            <div class="row">
+                <div class="col-md-3" *ngFor="let item of wishlistItems">
+                    <div class="card" style="height: 100%;">
+
+                        <button class="close-icon" (click)="removeFromWishlist(item)">
+                            &times;
+                        </button>
+
+                        <img class="card-img-top custom-image-size" [src]="item.products_Id.Image" alt="Card image" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ item.products_Id.Name }}</h4>
+                            <!-- <p class="card-text">Price: {{ item.products_Id.Price }}</p> -->
+                            <button class="btn btn-outline-secondary btn-sm" style="width: 190px;" (click)="addToCart(item)" >
+                                MOVE TO CART
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ng-template #emptyWishlist>
+            <div class="wishlistEmpty-container">
+                <div class="wishlistEmpty-heading">YOUR WISHLIST IS EMPTY</div>
+                <div class="wishlistEmpty-info">Add items to your wishlist to see them here.</div>
+                <button class=" btn btn-outline-secondary btn-sm btn-continue-shopping" [routerLink]="['/']">Continue Shopping</button>
+            </div>
+        </ng-template>
+        
+    </ng-container>
+
+    <ng-template #loginPrompt>
+        <div class="wishlistLogin-container">
+            <div class="wishlistLogin-heading">PLEASE LOG IN</div>
+            <div class="wishlistLogin-info">Login to view items in your wishlist.</div>
+            <div class="wishlistLogin-image-container">
+                <img src="assets/cart.jpeg" class="wishlistLogin-image">
+            </div>
+            <div><a class="wishlistLogin-button" [routerLink]="['/login']">LOGIN</a></div>
+        </div>
+    </ng-template>
+</div>

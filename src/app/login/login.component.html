@@ -1,0 +1,112 @@
+<div class="container-fluid px-0"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <a class="navbar-brand" href="#">
+            <img src="assets/Myntra.png" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+  
+            <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
+                <!-- <li class="nav-item">
+                    <form class="form-inline mr-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"
+                                    style="background-color: #f7f7f7; border: none;">
+                                    <i class="fas fa-search"
+                                        style="color: rgb(163, 159, 159);"></i>
+                                </span>
+                            </div>
+                            <input class="form-control border-0" type="search"
+                                placeholder="Search for products, brands and more" aria-label="Search"
+                                style="width: 350px; background-color: #f7f7f7; border-left: none; font-size: 14px;">
+                        </div>
+                    </form>
+                </li> -->
+                <li class="nav-item dropdown ml-3" id="profile-dropdown">
+                    <a class="nav-link" href="#" id="profileDropdownToggle">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-user fa-lg"></i>
+                        </div>
+                        <div class="text-wrapper">
+                            <div class="icon-text" style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">
+                                Profile
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile profile-shadow centered-dropdown"
+                        aria-labelledby="profileDropdownToggle" style="left: auto; right: 0; width: 330px;">
+                        <h6 class="bold-welcome">Welcome</h6>
+                        <p class="centered-text">To access account and manage orders</p>
+                        <button type="button"
+                            class="btn btn-outline-secondary btn-sm l-profile-btn custom-btn centered-button">
+                            <a class="dropdown-item l-drp-itm custom-button" href="#" [routerLink]="['/login']"
+                                style="font-weight: bold; color: #f70c6e;">LOGIN / SIGNUP</a>
+                        </button>
+                        <p class="line"></p>
+                    </div>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" [routerLink]="['/wishlist']" href="#">
+                        <i class="fas fa-heart fa-lg"></i>
+                        <div style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">Wishlist</div>
+                    </a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" [routerLink]="['/cart']" href="#">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                        <div style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">Cart</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div id="mountpoint">
+<div id="mainContent" style="padding-top: 0px;">
+    <div id="saleTimerContent" class="hide"></div>
+    <div id="MyntraReactContent"><div>
+        <div id="mainReactContent">
+            <div id="reactPageContent">
+                <div class="authPage"><div>
+                    <div class="LazyLoad  is-visible" style="height: 160px; width: 100%; background: rgb(255, 242, 223);">
+                        <picture class="img-responsive" style="width: 100%;">
+                            <source srcset="//assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg" type="image/webp">
+                            <img src="//assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/10/29/9610da61-a1a4-4215-b1fa-f612242d10e61698602536819-Flat_200--1-.jpg" class="img-responsive preLoad loaded" alt="" title="" style="width: 100%;">
+                        </picture></div>
+                        <div class="signInContainer">
+                            <div class="welcome-header">Login or <span class="welcome-header-small"><a [routerLink]="['/signup']" href="#"  class="signup-link">Signup</a></span></div>
+
+
+                            <div class="mobileInputContainer">
+                                <form class="loginForm" (ngSubmit)="Submit()" [formGroup]="loginForm">
+                                    <div class="form-group">
+                                      <input formControlName="PhoneNumber" type="tel" class="form-control" placeholder="Phone Number" maxlength="10">
+                                      <span class="error-message" *ngIf="loginForm.controls['PhoneNumber'].errors?.['pattern'] && (loginForm.controls['PhoneNumber'].touched || loginForm.controls['PhoneNumber'].dirty)" style="color: red; font-size: 10px;">Please enter a valid mobile number (10 digits)</span>
+                                      <span class="error-message" *ngIf="loginForm.controls['PhoneNumber'].errors?.['required'] && loginForm.controls['PhoneNumber'].touched"
+                                      style="color: red; font-size: 10px;">Phone number required</span>
+                                      <i class="bar"></i>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input formControlName="Password" type="password" class="form-control" placeholder="Password">
+                                        <span class="error-message" *ngIf="loginForm.controls['Password'].touched && loginForm.controls['Password'].errors?.['required']"
+                                        style="color: red; font-size: 10px;">Password required</span>
+                                        <span class="error-message" *ngIf="incorrectPassword && !loginForm.controls['Password'].errors?.['required']"
+                                        style="color: red; font-size: 10px;">Incorrect Password</span>
+                                        <i class="bar"></i>
+                                      </div>
+                                      
+
+
+                                    <div class="midLinks">By continuing, I agree to the <a href="/termsofuse">Terms of Use</a> &amp; <a href="/privacypolicy">Privacy Policy</a></div>
+                                    <button type="submit" class="submitBottomOption" style="border: none; width: 300px;">CONTINUE</button>
+                                  </form>
+                                  
+                                    <div class="get-help">Have trouble logging in? <span>Get help</span></div></div></div></div></div>
+                    </div>

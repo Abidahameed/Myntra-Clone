@@ -1,0 +1,269 @@
+.navbar-nav .nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-input {
+    display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+/* Style dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.icon-text {
+    margin-top: 2px; /* Adjust this value as needed */
+}
+.icon-wrapper {
+    margin-right: 5px; /* Adjust this value as needed */
+    display: inline-block;
+}
+
+.text-wrapper {
+    /* display: inline-block; */
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.centered-dropdown {
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.centered-button {
+    margin: 0 auto; /* This centers the button horizontally */
+}
+
+.bold-welcome {
+    font-weight: bold;
+}
+
+
+.l-profile-btn {
+    border-color: rgb(231, 231, 231);
+}
+.custom-button {
+    font-weight: bold;
+    
+    text-decoration: none; /* Remove underline */
+    border: 1px solid transparent; /* Add transparent border */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Add transition effect for smooth hover */
+    background-color: transparent; /* Set background to transparent */
+  }
+
+  /* Define the hover style to change the border color and remove background */
+  .custom-button:hover {
+    border-color: red; /* Change this to your desired border color */
+    background-color: transparent; /* Set background to transparent */
+  }
+
+
+
+#profileDropdownToggle + .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+
+
+
+@media (min-width: 800px) {
+    #reactPageContent {
+        min-height: calc(100vh - 136px);
+    }
+}
+#reactPageContent, #rnwPageContent {
+    min-height: calc(100vh - 50px);
+}
+
+
+
+.verificationContainer {
+    width: 100%;
+    padding: 60px;
+    color: #282c3f;
+}
+.otpTopImage .image {
+    width: 90px;
+    height: 90px;
+}
+.image {
+    width: 90px;
+    height: 90px;
+}
+.LazyLoad {
+    width: auto !important;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.image img {
+    width: 100%;
+}
+.LazyLoad img {
+    background: #fff;
+    color: #fff;
+}
+.loaded {
+    opacity: 1;
+}
+.preLoad {
+    opacity: 0;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+.loaded {
+    opacity: 1;
+}
+.preLoad {
+    opacity: 0;
+    -webkit-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.mobContainer {
+    margin-top: 20px;
+}
+.mobContainer h3 {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mobContainer h4 {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: .7;
+    padding: 0;
+}
+.otpContainer {
+    margin-top: 40px;
+}
+.otpContainer input {
+    padding: 9px 0;
+    border: 1px solid #d4d5d9;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 16px 0 0;
+    width: 30px;
+    border-radius: 2px;
+}
+input {
+    caret-color: #ff2459;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: 0;
+}
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+.resendContainer {
+    padding: 0;
+    border: none;
+    color: #ff3f6c;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: 0;
+}
+
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.bottomeLink {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 12px;
+}
+.bottomeLink a, .bottomeLink span {
+    font-weight: 600;
+    color: #ff3f6c;
+}
+
+.authPage {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#mainReactContent {
+
+    margin: 0 auto; /* Set left and right margins to auto to center horizontally */
+    max-width: 800px;
+    padding-top: 56px !important; 
+    
+}
+
+#mountpoint{
+    background-color: rgb(255, 242, 223);
+    display: flex;
+    height: 100vh;
+}

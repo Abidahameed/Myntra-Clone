@@ -1,0 +1,465 @@
+.navbar-nav .nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-input {
+    display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+/* Style dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.icon-text {
+    margin-top: 2px; /* Adjust this value as needed */
+}
+.icon-wrapper {
+    margin-right: 5px; /* Adjust this value as needed */
+    display: inline-block;
+}
+
+.text-wrapper {
+    /* display: inline-block; */
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.centered-dropdown {
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.centered-button {
+    margin: 0 auto; /* This centers the button horizontally */
+}
+
+.bold-welcome {
+    font-weight: bold;
+}
+
+
+.l-profile-btn {
+    border-color: rgb(231, 231, 231);
+}
+.custom-button {
+    font-weight: bold;
+    
+    text-decoration: none; /* Remove underline */
+    border: 1px solid transparent; /* Add transparent border */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Add transition effect for smooth hover */
+    background-color: transparent; /* Set background to transparent */
+  }
+
+  /* Define the hover style to change the border color and remove background */
+  .custom-button:hover {
+    border-color: rgb(79, 142, 236); /* Change this to your desired border color */
+    background-color: transparent; /* Set background to transparent */
+  }
+
+
+
+#profileDropdownToggle + .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    margin-top: 80px;
+  }
+  
+  .left {
+    grid-column: 1 / 2;
+  }
+  
+  .right {
+    grid-column: 2 / 3;
+  }
+  
+
+  .product-title {
+    color: #282c3f;
+    padding: 0 20px 0 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.product-name {
+    color: #535665;
+    padding: 5px 20px 14px 0;
+    font-size: 20px;
+    opacity: .8;
+    font-weight: 400;
+}
+
+.product-price {
+    color: #282c3f;
+    margin-right: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+
+}
+
+.product-selling-price {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+.product-selling-price {
+    position: relative;
+}
+
+.product-vatInfo {
+    color: #03a685;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    margin: 5px 16px 0 0;
+    padding-top: 13px;
+}
+
+.size-buttons-select-size {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+
+
+
+.size-buttons-size-buttons {
+    margin-bottom: 10px;
+}
+
+.size-buttons-size-buttons {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+margin: 0;
+font-size: 13px;
+-webkit-overflow-scrolling: touch;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+position: relative;
+}
+
+.size-buttons-tipAndBtnContainer {
+    margin: 10px 10px 10px 0;
+}
+
+.size-buttons-buttonContainer {
+    position: relative;
+}
+
+.size-buttons-size-button {
+    position: relative;
+}
+.size-buttons-size-button-default {
+    background-color: #fff;
+    border: 1px solid #bfc0c6;
+    border-radius: 50px;
+    padding: 0;
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    color: #282c3f;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.size-buttons-unified-size {
+    margin: 0;
+    font-size: 14px;
+    padding: 0 8px;
+    font-weight: 700;
+}
+
+.size-buttons-inventory-left-hidden {
+    visibility: hidden;
+}
+.size-buttons-inventory-left {
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    width: 90%;
+    left: 7%;
+    background-color: #ff905a;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.size-buttons-sizeTip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    min-width: 400px;
+    visibility: hidden;
+    -webkit-transition: visibility .1s ease-out;
+    transition: visibility .1s ease-out;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+}
+
+.size-buttons-sizeTip .size-buttons-sizeTipMeta {
+    position: absolute;
+    min-width: 400px;
+    left: 0;
+    bottom: 10px;
+    text-align: left;
+    border: 1px solid #e9e9eb;
+    background-color: #fff;
+    padding: 18px;
+    z-index: 29;
+    border-radius: 4px;
+    font-weight: 400;
+    -webkit-box-shadow: 0 2px 16px 0 rgba(40, 44, 63, .1);
+    box-shadow: 0 2px 16px 0 rgba(40, 44, 63, .1);
+}
+
+.size-buttons-bodymeasure {
+    color: #535665;
+}
+.size-buttons-measurementType {
+    font-size: 14px;
+    color: #282c3f;
+}
+.size-buttons-measurementName {
+    font-size: 14px;
+    margin-left: 6px;
+    font-weight: 700;
+    color: #535665;
+}
+
+.pdp-flex.pdp-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.pdp-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.pdp-flex.pdp-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.pdp-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.pdp-whiteBag {
+    margin-right: 12px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+}
+.sprites-whiteBag {
+    background-position: -2283px -40px;
+    width: 23px;
+    height: 22px;
+}
+
+
+.pdp-add-to-bag {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.pdp-add-to-bag {
+border-radius: 0;
+padding: 12px 15px;
+min-width: 108px;
+font-weight: 700;
+cursor: pointer;
+background-color: #ff3e6c;
+border: 1px solid #ff3e6c;
+color: #fff;
+-webkit-box-flex: 3;
+-ms-flex: 3;
+flex: 3;
+text-align: center;
+width: 50%;
+margin-right: 3%;
+}
+.pdp-button {
+border-radius: 3px;
+outline: 0;
+margin-top: 10px;
+padding: 10px 30px;
+font-size: 16px;
+min-height: 22px;
+
+}
+
+
+
+.pdp-flex.pdp-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.pdp-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+@media (min-width: 980px) {
+    .pdp-add-to-wishlist {
+        width: 34%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+@media (min-width: 980px) {
+    .pdp-add-to-bag, .pdp-add-to-wishlist {
+        margin-top: 0;
+        border-radius: 4px;
+    }
+}
+.pdp-add-to-wishlist {
+    border-radius: 0;
+    padding: 12px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    border: 1px solid #d4d5d9;
+    background-color: #fff;
+    letter-spacing: .4px;
+    color: #282c3f;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    
+}
+.pdp-button {
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    min-height: 22px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.small-image {
+    width: 450px; /* Set the width */
+    height: 400px; /* Set the height */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    margin-left: 25px; /* Add margin-left as needed */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .small-image:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+  }
+
+  .product-button{
+    position: relative;
+    top: 5px;
+  }
+
+  .product-info {
+    color: grey;
+    font-size: 18px; /* Increase this value as needed */
+    margin: 5px 0; /* Optional: Add some margin between sentences */
+}
+.product-description{
+    margin-top: 20px;
+    padding: 6px;
+}
+.product-name{
+    color: grey;
+    font-size: 18px;
+}
+
+.product-size{
+    position: relative;
+    font-weight: 600;
+    border: none;
+    position: relative;
+    left: 124px;
+}
+
+.product-price {
+    color: #282c3f;
+    margin-right: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    right: 120px;
+  
+}
+
+.size-buttons-select-size {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+    position: relative;
+    left: 111px;
+}

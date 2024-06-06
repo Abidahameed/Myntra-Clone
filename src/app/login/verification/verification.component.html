@@ -1,0 +1,108 @@
+<div class="container-fluid px-0"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <a class="navbar-brand" href="#">
+            <img src="assets/Myntra.png" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto d-flex flex-row align-items-center">
+                <li class="nav-item dropdown position-static" style="margin-left: 20px; font-weight: bold;">
+                    <a class="nav-link" [routerLink]="['/category']" id="navbarDropdown1" href="#">
+                        MEN
+                    </a>
+                </li>
+                <li class="nav-item dropdown position-static" style="margin-left: 20px; font-weight: bold;">
+                    <a class="nav-link" href="#" id="navbarDropdown2">
+                        WOMEN
+                    </a>
+                </li>
+                <li class="nav-item dropdown position-static" style="margin-left: 20px; font-weight: bold;">
+                    <a class="nav-link" href="#" id="navbarDropdown3">
+                        KIDS
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
+                <li class="nav-item">
+                    <form class="form-inline mr-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"
+                                    style="background-color: #f7f7f7; border: none;">
+                                    <i class="fas fa-search"
+                                        style="color: rgb(163, 159, 159);"></i>
+                                </span>
+                            </div>
+                            <input class="form-control border-0" type="search"
+                                placeholder="Search for products, brands and more" aria-label="Search"
+                                style="width: 350px; background-color: #f7f7f7; border-left: none; font-size: 14px;">
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item dropdown ml-3" id="profile-dropdown">
+                    <a class="nav-link" href="#" id="profileDropdownToggle">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-user fa-lg"></i>
+                        </div>
+                        <div class="text-wrapper">
+                            <div class="icon-text" style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">
+                                Profile
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile profile-shadow centered-dropdown"
+                        aria-labelledby="profileDropdownToggle" style="left: auto; right: 0; width: 330px;">
+                        <h6 class="bold-welcome">Welcome</h6>
+                        <p class="centered-text">To access account and manage orders</p>
+                        <button type="button"
+                            class="btn btn-outline-secondary btn-sm l-profile-btn custom-btn centered-button">
+                            <a class="dropdown-item l-drp-itm custom-button" href="#" [routerLink]="['/login']"
+                                style="font-weight: bold; color: #f70c6e;">LOGIN / SIGNUP</a>
+                        </button>
+                        <p class="line"></p>
+                    </div>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" [routerLink]="['/wishlist']" href="#">
+                        <i class="fas fa-heart fa-lg"></i>
+                        <div style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">Wishlist</div>
+                    </a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" [routerLink]="['/cart']" href="#">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                        <div style="font-size: 12px; color: rgb(70, 63, 63); font-weight: bold;">Cart</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div id="mountpoint">
+<div id="mainReactContent">
+<div id="reactPageContent">
+    <div class="authPage">
+    <div class="verificationContainer">
+        <!-- <div class="otpTopImage">
+            <div class="image">
+                <div class="LazyLoad  is-visible" style="height: auto; width: 100%; background: rgb(244, 255, 249);"> -->
+                    <!-- <picture class="img-responsive" style="width: 100%;">
+                        <source srcset="//constant.myntassets.com/pwa/assets/img/3a438cb4-c9bf-4316-b60c-c63e40a1a96d1548071106233-mobile-verification.jpg" type="image/webp">
+                        <img src="//constant.myntassets.com/pwa/assets/img/3a438cb4-c9bf-4316-b60c-c63e40a1a96d1548071106233-mobile-verification.jpg" class="img-responsive preLoad loaded" alt="" title="" style="width: 100%;"></picture></div></div></div> -->
+                        <div class="mobContainer">
+                            <h3>Verify with OTP</h3><h4>Sent to 8129975474</h4>
+                            <div class="otpContainer"><input name="otp0" type="tel" maxlength="1" data-val="0" autocomplete="off" value="">
+                                <input name="otp1" type="tel" maxlength="1" data-val="1" autocomplete="off" value="">
+                                <input name="otp2" type="tel" maxlength="1" data-val="2" autocomplete="off" value="">
+                                <input name="otp3" type="tel" maxlength="1" data-val="3" autocomplete="off" value="">
+                            </div><div><button class="resendContainer">RESEND OTP</button></div></div>
+                            <div class="bottomeLink"> Log in using <span> Password </span> </div>
+                            <div class="bottomeLink"> Having trouble logging in? <span> Get help </span> </div></div></div>
+</div>
+</div>
+</div>

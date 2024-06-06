@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" *ngIf="authservice.isLoggedIn()">
+      <!-- If the user is logged in and has orders -->
+      <div class="row" *ngIf="userorder && userorder.length > 0">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let order of userorder">
+          <div class="card shadow-sm">
+            <img class="card-img-top" [src]="order.products_Id.Image" alt="Card image" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">{{ order.products_Id.Name }}</h5>
+              <p class="card-text">Size: {{ order.products_Id.Size }}</p>
+              <p class="card-text">Quantity: {{ order.quantity }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If the user is logged in but has no orders -->
+      <div class="wishlistLogin-container" *ngIf="userorder && userorder.length === 0">
+        <div class="wishlistEmpty-container">
+            <div class="wishlistEmpty-heading">No Orders</div>
+            <div class="wishlistEmpty-info">Add items to your Orders to see them here.</div>
+            <button class=" btn btn-outline-secondary btn-sm btn-continue-shopping" [routerLink]="['/']">Go Home</button>
+        </div>
+      </div> 
+    </div>
+</body>
+
+    <!-- If the user is not logged in -->
+    <!-- <div class="container" *ngIf="!authservice.isLoggedIn()">
+      <p>Please login to view your orders.</p>
+    </div> -->
+
+  
+</html>
+

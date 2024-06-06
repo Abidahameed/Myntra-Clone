@@ -1,0 +1,248 @@
+.navbar-nav .nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-input {
+    display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+/* Style dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.icon-text {
+    margin-top: 2px; /* Adjust this value as needed */
+}
+.icon-wrapper {
+    margin-right: 5px; /* Adjust this value as needed */
+    display: inline-block;
+}
+
+.text-wrapper {
+    /* display: inline-block; */
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.centered-dropdown {
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.centered-button {
+    margin: 0 auto; /* This centers the button horizontally */
+}
+
+.bold-welcome {
+    font-weight: bold;
+}
+
+
+.l-profile-btn {
+    border-color: rgb(231, 231, 231);
+}
+.custom-button {
+    font-weight: bold;
+    
+    text-decoration: none; /* Remove underline */
+    border: 1px solid transparent; /* Add transparent border */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Add transition effect for smooth hover */
+    background-color: transparent; /* Set background to transparent */
+  }
+
+  /* Define the hover style to change the border color and remove background */
+  .custom-button:hover {
+    border-color: red; /* Change this to your desired border color */
+    background-color: transparent; /* Set background to transparent */
+  }
+
+
+
+#profileDropdownToggle + .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+
+
+.wishlistLogin-container {
+    max-width: 980px;
+    margin: 140px auto 180px;
+    text-align: center;
+}
+.wishlistLogin-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #282c3f;
+}
+
+.wishlistLogin-info {
+    font-size: 18px;
+    color: #94989f;
+    max-width: 380px;
+    margin: 20px auto 0;
+}
+
+.wishlistLogin-icon {
+    margin: 43px 0 50px;
+    display: inline-block;
+}
+.sprites-emptyIcon {
+    width: 96px;
+    height: 105px;
+    background-position: -1163px 0;
+}
+.myntraweb-sprite {
+  
+    background-size: 1404px 105px;
+    display: inline-block;
+}
+
+.wishlistLogin-button {
+    border: 1px solid #3466e8;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14.5px 51px;
+    color: #3466e8;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+
+.wishlistLogin-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.wishlistLogin-image {
+    max-width: 300px; /* Adjust the size as needed */
+    height: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: #282c3f;
+}
+a {
+    background-color: transparent;
+}
+
+
+
+.index-headingDiv {
+    margin: auto;
+    padding: 50px 0;
+}
+.index-heading {
+    width: 162px;
+    height: 21px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-left: 85px;
+}
+
+.card {
+    width: 250px; /* Adjust the width value as needed */
+    height: 200px;; /* Allow height to adjust based on content */
+    transition: transform 0.3s ease;
+
+
+    display: inline-block; /* Ensure the card doesn't take up full width */
+    border: none; /* Remove border if any */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+   
+}
+
+.custom-image-size{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    border-radius: 0%;
+
+}
+
+
+.wishlistEmpty-container {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 200px;
+}
+
+
+.wishlistEmpty-info {
+    font-size: 20px; /* Increase the font size */
+    color: #afabab; /* Change the text color */
+    /* Change the font weight */
+}
+.wishlistEmpty-heading{
+    font-size: 22px; /* Increase the font size */
+    color: #c74b74; /* Change the text color */
+    font-weight: bold;
+}
+.btn-continue-shopping {
+    background-color: white; /* White background */
+    color: grey; /* Grey text color */
+    border-color: grey; /* Grey border color */
+  width: 190px;
+margin-top: 20px;
+padding: 10px;
+
+
+}
+
+.close-icon {
+    position: absolute;
+    top: -8px;
+    right: 1px;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none; /* Remove outline on all states */
+}
+
+.close-icon:focus {
+    outline: none; /* Remove outline when button is focused */
+}

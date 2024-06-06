@@ -1,0 +1,307 @@
+.navbar-nav .nav-link.dropdown-toggle::after {
+    display: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-input {
+    display: none;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+/* Style dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.icon-text {
+    margin-top: 2px; /* Adjust this value as needed */
+}
+.icon-wrapper {
+    margin-right: 5px; /* Adjust this value as needed */
+    display: inline-block;
+}
+
+.text-wrapper {
+    /* display: inline-block; */
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.centered-dropdown {
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.centered-button {
+    margin: 0 auto; /* This centers the button horizontally */
+}
+
+.bold-welcome {
+    font-weight: bold;
+}
+
+
+.l-profile-btn {
+    border-color: rgb(231, 231, 231);
+}
+.custom-button {
+    font-weight: bold;
+    
+    text-decoration: none; /* Remove underline */
+    border: 1px solid transparent; /* Add transparent border */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Add transition effect for smooth hover */
+    background-color: transparent; /* Set background to transparent */
+  }
+
+  /* Define the hover style to change the border color and remove background */
+  .custom-button:hover {
+    border-color: red; /* Change this to your desired border color */
+    background-color: transparent; /* Set background to transparent */
+  }
+
+
+
+#profileDropdownToggle + .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+
+
+.signInContainer {
+    padding: 36px 36px 0;
+}
+.welcome-header {
+    font-family: Assistant;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.welcome-header-small {
+    font-size: 16px;
+    font-weight: 400;
+    color: #535766;
+}
+
+.mobileInputContainer {
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 14px;
+    position: relative;
+}
+.mobileInputContainer .form-group {
+    margin-bottom: 24px;
+}
+
+.mobileInputContainer .form-group .form-control {
+    border: 1px solid #d4d5d9;
+    font-size: 14px;
+    padding: 11px 12px;
+    line-height: 16px;
+    height: auto;
+    color: #282c3f;
+}
+
+.mobileInputContainer .form-group input {
+    caret-color: #ff3f6c;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #3e4152;
+    background-color: #fff;
+    background-image: none;
+    border: none;
+}
+
+.mobileInputContainer .form-group .placeholderAlternative {
+    color: #94969f;
+    top: 10px;
+    left: 12px;
+    font-size: 14px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.mobileInputContainer .form-group .bar {
+    display: none;
+}
+.form-group .bar {
+    position: relative;
+    border-bottom: 1px solid #a9abb3;
+    display: block;
+}
+
+.mobileInputContainer .midLinks {
+    margin: 0 0 21px;
+    color: rgba(40, 44, 63, .8);
+}
+.mobileInputContainer .submitBottomOption {
+    cursor: pointer;
+    background-color: #ff3f6c;
+    text-align: center;
+    padding: 12px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.get-help {
+    margin: 30px 0;
+    font-size: 12px;
+    position: relative;
+    bottom: 17px;
+}
+
+.authPage {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.welcome-header {
+    font-family: Assistant;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.mobileInputContainer .submitBottomOption {
+    cursor: pointer;
+    background-color: #ff3f6c;
+    text-align: center;
+    padding: 12px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.get-help a, .get-help span {
+    cursor: pointer;
+    color: #ff3f6c;
+    font-weight: 700;
+}
+
+.signup-link {
+    color: #ff3f6c; 
+    text-decoration:underline;
+    font-weight: bold; 
+}
+
+/* @media (min-width: 800px) {
+    #reactPageContent {
+        min-height: calc(100vh - 136px);
+    }
+}
+#reactPageContent, #rnwPageContent {
+    min-height: calc(100vh - 50px);
+} */
+
+
+.signInContainer {
+    max-width: 400px; 
+    margin: 0 auto; 
+    /* height: 377px; */
+}
+
+.signInContainer .welcome-header {
+    font-size: 20px; 
+}
+
+.signInContainer .form-group {
+    margin-bottom: 15px; 
+}
+
+.authPage .img-responsive {
+    max-width: 400px; /* Adjust the maximum width of the image */
+    height: 160; /* Maintain the aspect ratio */
+}
+
+.layout {
+    position: relative;
+    
+}
+
+#mainContent {
+    padding-top: 0 !important;
+}
+
+#mountpoint{
+    background-color: rgb(255, 242, 223);
+    display: flex;
+    /* height: 100vh; */
+}
+/* @media (min-width: 600px) {
+    #mainContent {
+        width: 400px;
+    }
+} */
+#mainContent {
+
+    margin: 0 auto; /* Set left and right margins to auto to center horizontally */
+    max-width: 800px;
+    padding-top: 56px !important; 
+    
+}
+
+.mobileInputContainer .midLinks {
+    margin: 0 0 21px;
+    color: rgba(40, 44, 63, .8);
+}
+.mobileInputContainer .midLinks a {
+    cursor: pointer;
+    color: #ff3c6f;
+    font-weight: 700;
+}
+
+
+.midLinks{
+    font-size: 12px ;
+}
+.nav {
+    background: linear-gradient(to bottom right, #feedf6, #fcf0e2);
+}
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
